@@ -1,0 +1,124 @@
+{
+  "model": {
+    "factors_g_per_kwh": {
+      "coal": 896,
+      "gas": 683,
+      "oil": 640,
+      "intercept": 11
+    },
+    "n_country_years": 2729,
+    "n_countries": 111,
+    "r2_in_sample": 0.874,
+    "r2_held_out_countries": 0.864
+  },
+  "n_countries": 54,
+  "top5_raw": {
+    "Venezuela": {
+      "pct": -73.1,
+      "flags": "shrinking_not_cleaning, hydro_swing"
+    },
+    "Finland": {
+      "pct": -63.4,
+      "flags": ""
+    },
+    "Spain": {
+      "pct": -55.5,
+      "flags": ""
+    },
+    "Netherlands": {
+      "pct": -54.5,
+      "flags": ""
+    },
+    "Chile": {
+      "pct": -47.1,
+      "flags": ""
+    }
+  },
+  "top5_unflagged": {
+    "Finland": {
+      "pct": -63.4
+    },
+    "Spain": {
+      "pct": -55.5
+    },
+    "Netherlands": {
+      "pct": -54.5
+    },
+    "Chile": {
+      "pct": -47.1
+    },
+    "Greece": {
+      "pct": -46.7
+    }
+  },
+  "focus": {
+    "Australia": {
+      "rank": 18,
+      "rank_unflagged": 16,
+      "n_unflagged": 51,
+      "ci_start": 729.7,
+      "ci_end": 553.8,
+      "pct": -24.1,
+      "d_coal": -18.7,
+      "d_gas": -2.1,
+      "d_wind": 7.0,
+      "d_solar": 15.4,
+      "from_coal": -167.0,
+      "from_gas": -14.6,
+      "residual": 7.0
+    }
+  },
+  "coal_replacement": {
+    "countries": 21,
+    "avg_d_coal": -17.1,
+    "avg_d_wind_solar": 15.1,
+    "avg_d_gas": 4.8
+  },
+  "corr_pct_vs_wind_solar": -0.65,
+  "flagged": {
+    "Venezuela": {
+      "pct": -73.1,
+      "gen_change_pct": -37.2,
+      "clean_twh_change_pct": -2.6,
+      "d_hydro": 32.4,
+      "flags": "shrinking_not_cleaning, hydro_swing"
+    },
+    "Romania": {
+      "pct": -31.9,
+      "gen_change_pct": -19.7,
+      "clean_twh_change_pct": -6.3,
+      "d_hydro": 1.6,
+      "flags": "shrinking_not_cleaning"
+    },
+    "Uzbekistan": {
+      "pct": -6.4,
+      "gen_change_pct": 42.0,
+      "clean_twh_change_pct": 90.6,
+      "d_hydro": -1.8,
+      "flags": "unexplained"
+    }
+  },
+  "sensitivity": {
+    "runs": 18,
+    "percentile_range": [
+      0.19,
+      0.33
+    ],
+    "top5_frequency_raw": {
+      "Netherlands": 0.83,
+      "Venezuela": 0.67,
+      "Finland": 0.67,
+      "Spain": 0.61,
+      "United Kingdom": 0.5,
+      "Brazil": 0.44
+    },
+    "top5_frequency_after_flags": {
+      "Netherlands": 0.94,
+      "Spain": 0.78,
+      "Finland": 0.67,
+      "Brazil": 0.56,
+      "United Kingdom": 0.56,
+      "Denmark": 0.33
+    }
+  }
+}

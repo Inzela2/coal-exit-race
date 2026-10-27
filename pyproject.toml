@@ -1,0 +1,19 @@
+[project]
+name = "coalrace"
+version = "0.1.0"
+description = "The coal-exit race: which large grids decarbonised fastest, and what replaced coal?"
+requires-python = ">=3.10"
+dependencies = ["pandas>=2.0", "numpy", "matplotlib"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
